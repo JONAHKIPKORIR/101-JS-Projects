@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>101 JS Projects | Jonah Kiplimo</title>
+    <meta
+      name="description"
+      content="A collection of 101 Vanilla JavaScript projects covering DOM manipulation, APIs, games, and UI logic."
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 2rem 1rem;
+        color: #1f2937;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: white;
+      }
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+      }
+      .subtitle {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 0.5rem;
+        transition: all 0.3s;
+      }
+      .back-link:hover {
+        background: rgba(255, 255, 255, 0.15);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .card {
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+      }
+      .card-preview {
+        height: 160px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: white;
+        overflow: hidden;
+      }
+      .card-preview img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card-body {
+        padding: 1.25rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .card-title {
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: #1f2937;
+      }
+      .card-desc {
+        font-size: 0.85rem;
+        color: #6b7280;
+        line-height: 1.5;
+        flex: 1;
+      }
+      .card-tag {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+        background: #f3f4f6;
+        border-radius: 999px;
+        color: #6b7280;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>101 JS Projects</h1>
+      <p class="subtitle">
+        A collection of 101 Vanilla JavaScript projects covering DOM
+        manipulation, APIs, games, and UI logic.
+      </p>
+      <a href="https://jonah-kiplimo-portfolio.vercel.app" class="back-link"
+        >← Back to Portfolio</a
+      >
+    </div>
+
+    <div class="grid">
+      <!-- ========== PROJECTS START HERE ========== -->
+      <!-- Add new cards here. Copy the pattern below: -->
+
+      <a href="./01-tip-calculator/" class="card">
+        <div class="card-preview">🧮</div>
+        <div class="card-body">
+          <div class="card-title">Tip Calculator</div>
+          <div class="card-desc">
+            Calculate the final bill from an amount and tip percentage.
+          </div>
+          <span class="card-tag">Beginner</span>
+        </div>
+      </a>
+
+      <a href="./02-pomodoro-timer/" class="card">
+        <div class="card-preview">⏱️</div>
+        <div class="card-body">
+          <div class="card-title">Pomodoro Timer</div>
+          <div class="card-desc">
+            A productivity timer with LocalStorage persistence.
+          </div>
+          <span class="card-tag">Intermediate</span>
+        </div>
+      </a>
+
+      <a href="./03-recipe-book/" class="card">
+        <div class="card-preview">🍳</div>
+        <div class="card-body">
+          <div class="card-title">Recipe Book</div>
+          <div class="card-desc">
+            Search recipes using the Fetch API and async/await.
+          </div>
+          <span class="card-tag">Intermediate</span>
+        </div>
+      </a>
+
+      <!-- ========== ADD MORE PROJECTS ABOVE ========== -->
+    </div>
+  </body>
+</html>
